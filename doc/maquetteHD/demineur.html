@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineur</title>
+    <script src="topbar.js"></script>
+    <script src="score.js"></script>
+    <script src="afficherMasquerTexte.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topbar"></div>
+
+    <div id="score"></div>
+
+    <div class="jeuDemineur">
+        <div class="titreJeu">Démineur</div>
+        <div class="temps">Temps : 00 : 30</div>
+        <div id="grille">
+            <canvas id="myCanvas" width=500 height=500></canvas>
+        </div>
+        <button class="btnDemineur">Afficher la solution</button>
+        <hr class="barre">
+        <div class="affichageRegle">Les règles du jeu
+            <div onclick="ouvrirFermerSpoiler()" class="arrowContainer">
+                <div id="cliquerPourLesRegles" class="arrow"></div>
+            </div>
+        </div>
+        <div id="texteAAfficher" class="cacheTexte">Superatis Tauri montis verticibus qui ad solis ortum sublimius
+            attolluntur, Cilicia spatiis porrigitur late distentis
+            dives bonis omnibus terra, eiusque lateri dextro adnexa Isauria, pari sorte uberi palmite viget et frugibus
+            minutis, quam mediam
+            navigabile flumen Calycadnus interscindit.
+        </div>
+    </div>
+</body>
+
+</html>

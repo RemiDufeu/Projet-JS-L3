@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineur</title>
+    <script src="jsAccueil/topbar.js"></script>
+    <script src="commun/score.js"></script>
+    <script src="commun/chronometre.js"></script>
+    <script src="jsAccueil/afficherMasquerTexte.js"></script>
+    <script src="demineurGames/ecouteur.js"></script>
+    
+    <script src="demineurGames/affichageMenu.js"></script>
+    <script src="demineurGames/affichageFinDePartie.js"></script>
+    <script src="demineurGames/grille.js"></script>
+    <script src="demineurGames/utils.js"></script>
+    <script src="demineurGames/case.js"></script>
+    <script src="demineurGames/script.js"></script>
+    <script src="demineurGames/menuDebut.js"></script>
+    <script src="demineurGames/assets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <body onselectstart="return false"  oncontextmenu="return false"></body>
+    <div id="topbar"></div>
+
+    <div id="score"></div>
+
+    <div class="jeuDemineur">
+        <div class="titreJeu">Démineur</div>
+        <div id="temps">Temps : </div> 
+        <div id="grilleDemineur">
+            <canvas id="canvasDemineur" width=500 height=500></canvas>
+        </div>
+        <button class="btnDemineur" onclick="revelerUneBombe()">Afficher la solution</button>
+        <hr class="barre">
+        <div class="affichageRegle">Les règles du jeu
+            <div onclick="ouvrirFermerSpoiler('#cliquerPourLesRegles','#texteAAfficher')" class="arrowContainer">
+                <div id="cliquerPourLesRegles" class="arrow"></div>
+            </div>
+        </div>
+        <div id="texteAAfficher" class="cacheTexte">Le but du jeu est de découvrir toutes les cases libres sans faire exploser les mines, c'est-à-dire sans cliquer sur les cases qui les dissimulent. Lorsque le joueur clique sur une case libre comportant au moins une mine dans l'une de ses cases avoisinantes, un chiffre apparaît, indiquant ce nombre de mines.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeufLettres</title>
+    <script src="jsAccueil/topbar.js"></script>
+    <script src="commun/score.js"></script>
+    <script src="commun/chronometre.js"></script>
+    <script src="neufLettresGame/asset/dictionnaireMots.js"></script>
+    <script src="neufLettresGame/Coordonnees.js"></script>
+    <script src="jsAccueil/afficherMasquerTexte.js"></script>
+    <script src="neufLettresGame/Grille/GrilleAbs.js"></script>
+    <script src="neufLettresGame/Grille/GrillePres.js"></script>
+    <script src="neufLettresGame/Grille/GrilleCtrl.js"></script>
+    <script src="neufLettresGame/Grille/Mot.js"></script>
+    <script src="neufLettresGame/Grille/Lettre.js"></script>
+    <script src="neufLettresGame/asset/assets.js"></script>
+    <script src="neufLettresGame/Message.js"></script>
+    <script src="neufLettresGame/MenuDebut.js"></script>
+    <script src="neufLettresGame/Solution.js"></script>
+    <script src="neufLettresGame/MenuFin.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="neufLettresGame/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.min.js"></script>
+</head>
+
+<body>
+    <div id="topbar"></div>
+    <div id="solution">
+        <p>liste de mots</p>
+        <ul>
+        </ul>
+    </div>
+    <div id="score"></div>
+
+    <div class="jeuNeufLettres">
+        <div class="titreJeu">Neuf Lettres</div>
+        <div id="temps">Temps : 0</div> 
+        <div id="grille">
+            <canvas id="myCanvasMots" width=500 height=500></canvas>
+            <canvas id="myCanvasDessin" width=500 height=500></canvas>
+        </div>
+        <button class="btnNeufLettres" id="btnSolution" disabled="true">Afficher la solution</button>
+        <hr class="barre">
+        <div class="affichageRegle">Les règles du jeu
+            <div onclick="ouvrirFermerSpoiler('#cliquerPourLesRegles','#texteAAfficher')" class="arrowContainer">
+                <div id="cliquerPourLesRegles" class="arrow"></div>
+            </div>
+        </div>
+        <div id="texteAAfficher" class="cacheTexte">
+            Dans le jeu neuf lettre, chaque mot se trouve se trouve dans une zone de 9 lettres qui peut être distingué par des bordures épaisses. Il y a en tout 8 mots à trouver pour terminer le jeu le but étant de finir le plus rapidement possible la grille.
+            <br>
+            Chaque lettre est selectionnable en restant appuyé sur le clique gauche de la souris. Pour constituer un mot il suffit de rester appuyé sur le clique tout en réunissant plusieurs lettres. Les lettres sont donc forcément collé avec la lettre précédente du même mot.
+            <br>
+            Le mode facile comporte une petite aide en indiquant en jaune la première lettre du mot.
+            <br>
+            Le bouton "afficher la solution" permet d'afficher le mot à trouver (dans l'ordre des mots de gauche à droite et de haut en bas)
+        </div>
+    </div>
+</body>
+
+</html>

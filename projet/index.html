@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jsAccueil/topbar.js"></script>
+    <script src="jsAccueil/modifierImage.js"></script>
+    <script src="jsAccueil/afficherMasquerTexte.js"></script>
+</head>
+<body>
+    
+    <div id="topbar"></div>
+
+    <div class="listeJeu">
+        <div class="jeu">
+            <div class="titreListeJeu">Démineur</div>
+            <a href="demineur.html"><img class="imageJeu" onmouseover="animationImage(this)" onmouseout="sansAnimationImage(this)" src="../../ressources/images/grilleDemineur.jpeg" alt="grilleDemineur"/></a>
+            <div class="descriptionJeu">Le Démineur (Minesweeper) est un jeu vidéo de réflexion dont le but est de localiser des mines cachées dans une grille représentant un champ de mines virtuel, avec pour seule indication le nombre de mines dans les zones adjacentes. /!\ Les récompenses sont communautaires et les scores fonctionne que pour le mode Expert</div>
+            <div class="affichageRegle">Les règles du jeu
+                <div onclick="ouvrirFermerSpoiler('#cliquerPourLesRegles','#texteAAfficher1')" class="arrowContainer">
+                    <div id="cliquerPourLesRegles" class="arrow"></div>
+                </div>
+            </div>
+            <div id="texteAAfficher1" class="cacheTexte">Le but du jeu est de découvrir toutes les cases libres sans faire exploser les mines, c'est-à-dire sans cliquer sur les cases qui les dissimulent. Lorsque le joueur clique sur une case libre comportant au moins une mine dans l'une de ses cases avoisinantes, un chiffre apparaît, indiquant ce nombre de mines.
+            </div>
+        </div>
+        <div class="jeu">
+            <div class="titreListeJeu">Neuf Lettres</div> 
+            <a href="neufLettres.html"><img class="imageJeu" onmouseover="animationImage(this)" onmouseout="sansAnimationImage(this)" src="../../ressources/images/neufLettresImage.jpeg" alt="neufLettresImage"/></a>
+            <div class="descriptionJeu">Neuf lettres est un jeu de réflexion consistant à retrouver et à reconstruire des mots de neufs lettres dispersés dans des cases. Agilité d'esprit et maîtrise de la langue française sont mise à l'épreuve dans ce jeu issu des catalogues de vos grand-parents.</div>
+            <div class="affichageRegle">Les règles du jeu
+                <div onclick="ouvrirFermerSpoiler('#cliquerPourLesRegles1','#texteAAfficher2')" class="arrowContainer">
+                    <div id="cliquerPourLesRegles1" class="arrow"></div>
+                </div>
+            </div>
+            <div id="texteAAfficher2" class="cacheTexte">
+                Dans le jeu neuf lettre, chaque mot se trouve se trouve dans une zone de 9 lettres qui peut être distingué par des bordures épaisses. Il y a en tout 8 mots à trouver pour terminer le jeu le but étant de finir le plus rapidement possible la grille.
+                <br>
+                Chaque lettre est selectionnable en restant appuyé sur le clique gauche de la souris. Pour constituer un mot il suffit de rester appuyé sur le clique tout en réunissant plusieurs lettres. Les lettres sont donc forcément collé avec la lettre précédente du même mot.
+                <br>
+                Le mode facile comporte une petite aide en indiquant en jaune la première lettre du mot.
+                <br>
+                Le bouton "afficher la solution" permet d'afficher le mot à trouver (dans l'ordre des mots de gauche à droite et de haut en bas)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

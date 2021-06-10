@@ -1,0 +1,362 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    
+}
+
+
+/* Top bar CSS */
+.topbarContainer {
+    -webkit-box-shadow: 0px -2px 13px 0px #000000;
+    box-shadow: 0px -2px 13px 0px #000000;
+}
+
+.topbarContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.topbarContainer li {
+    list-style: none;
+    padding: 0 10px;
+    color: rgb(56, 56, 56);
+}
+/* logo du site*/
+#logo {
+    float: left;
+    position: absolute;
+    padding: 25px 30px;
+    color: rgb(223, 156, 32);
+}
+
+.topbarContainer a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#active {
+    color: rgb(236, 201, 44);
+}
+
+/* liste des jeux */
+.listeJeu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+/* titre des jeux */
+.titreListeJeu {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+/* image des jeux dans l'acceuil*/
+.imageJeu {
+    margin: 10px;
+    width: 380px;
+    height: 250px;
+    object-fit:cover;
+    
+}
+/* description des jeux dans l'acceuim*/
+.descriptionJeu {
+    margin: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+    height: 130px ;
+}
+/* bonton affichage des solutions pour le 9lettres*/
+.btnNeufLettres{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    background-color: rgb(189, 195, 199);
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    -webkit-box-shadow: 0px 3px 20px -10px #000000; 
+    box-shadow: 0px 3px 20px -10px #000000;
+    margin-left: 300px;
+    }
+/* bouton d'affichage des solution pour le démineur*/
+.btnDemineur{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    background-color: rgb(189, 195, 199);
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    -webkit-box-shadow: 0px 3px 20px -10px #000000; 
+    box-shadow: 0px 3px 20px -10px #000000;
+    margin-left: 300px;
+}
+/* bouton afficher les règles dans l'acceuil */
+.btnRegles {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    background-color: rgb(235, 180, 80);
+    color: whitesmoke;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    -webkit-box-shadow: 0px 3px 20px -10px #000000; 
+    box-shadow: 0px 3px 20px -10px #000000;
+}
+
+/* div des titre et jeu dans l'acceuil*/
+.jeu {
+    margin: 15px 30px;
+    text-align: center;
+    width : 400px;
+}
+
+#texteAAfficher2, #texteAAfficher {
+    text-align: left;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+    content: "";
+}
+
+/* taille des images des récompense*/
+.imageTrophee{
+    width: 75px;
+    margin : 30px;
+}
+
+/* div qui contient les récompense des 2 jeux*/
+.TouteRecompense{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.TouteRecompense .titre {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* div qui contient les récompense du démineur*/
+.Demineur{
+    margin: 15px 30px;
+    width : 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  div qui contient les récompenses du 9lettres*/
+.NeufLettres{
+    margin: 15px 30px;
+    
+    width : 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* alignement des textes pour les trophés */
+.texteRecompense{
+    text-align: center;
+}
+
+/* div qui contien l'immage et le texte du trophé*/
+.recompense{
+    margin-bottom: 20px;
+}
+
+/* div qui contient les canvas du neuflettres*/
+#grille {
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    border: 1px;
+    border: 1px solid #999;
+    margin: auto;
+    position: relative;
+}
+
+/* grille qui contient les canvas du démineur*/
+#grilleDemineur {
+    background-image: url("../projet/assets/images/imageDeFond.jpg");
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    border: 1px;
+    border: 1px solid #999;
+    margin: auto;
+    position: relative;
+}
+
+/* div qui contient tout les éléments du jeu hors score et topbar*/
+.jeuDemineur{
+    text-align: center;
+}
+
+/* titre du jeu*/
+.titreJeu{
+    font-size: 2rem;
+    margin: 100px 262px 30px;
+}
+
+/* div qui contient tout les éléments du jeu hors score et topbar*/
+.jeuNeufLettres{
+    text-align: center;  
+}
+
+/* div qui contient le temps */
+#temps{
+    font-size: 1.2rem;
+    max-width: 400px;
+    text-align: right;
+    margin: 10px auto;
+    color: rgb(211, 18, 18);
+}
+
+/* barre qui sépare le jeu des règles du jeu*/
+.barre{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/* Affichage des règles dans la page des jeux*/
+.affichageRegle{
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    max-width: 680px;
+    margin: auto;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.62);
+    margin-bottom: 50px;  
+}
+
+/* fleche pour afficher ou enlever les règles des jeux*/
+.arrow {
+    width: 15px;
+    height: 24px;
+    background-color: rgba(166, 172, 175);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    float: right;
+    transition: all 0.1s;
+    margin: 10px 15px;
+}
+
+/* rend la forme cliquable*/
+.arrowContainer:hover {
+    cursor: pointer;
+}
+
+/* permet la rotation de la forme quand on clique dessus */
+.rotateArrow {
+    transform : rotate(0.25turn);
+}
+
+/* texte des règles du jeu*/
+#texteAAfficher {
+    margin: 20px 200px 30px 200px;
+    text-align: justify;
+}
+
+/* rend les règles visible ou invisible*/
+.cacheTexte{
+    visibility: hidden;
+}
+
+/* container du score */
+#score {
+    float: right;
+    margin-top: 200px;
+    border : 1px solid rgb(53, 53, 53);
+}
+
+/* affichage d'une case de score*/
+.scoreCase {
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+    padding: 20px 0;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+/* separateur du score*/
+#score hr {
+    margin: 0 5px;
+}
+
+/* texte "dernier score" */
+#score span {
+    margin: 15px auto 10px;
+    text-align: center;
+    display: block;
+}
+
+/* gestion de la superposition des elements CSS*/
+#myCanvasDessin, .menuDebut {
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* CSS du container du menu pour gerer les espacements*/
+.menuDebut {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuDebut button {
+    width: 200px;
+    margin: 25px auto;
+}
+
+.menuDebut div{
+    width: 200px;
+    margin: 0px auto;
+}
+
+.menuDebut button {
+    padding: 10px 0;
+    border: none;
+    font-size: medium;
+}
+
+.menuDebut button:hover{
+    cursor: pointer;
+    background-color: #f3e190;
+}
+
+#myCanvasMots {
+    z-index: 0;
+}
+
+/* container des solutions de neufs lettres*/
+#solution {
+    float: left;
+    margin-top: 200px;
+    border : 1px solid rgb(53, 53, 53);
+    width: 250px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#solution li {
+    margin: 15px;
+}
+
+
